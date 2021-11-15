@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if(strService !== null){
             var strLength = strService.scrollHeight;
             
-            if(strLength < 500){
+            if(strLength < 200){
                 block.classList.add('is-button-hide');
                 block.classList.remove('is-hidden');
             }
