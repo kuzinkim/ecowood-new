@@ -1,0 +1,28 @@
+include _mixins.pug
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Contact
+        meta(property="og:type" content="website")
+        meta(property="og:url" content)
+        meta(property = "og:title" content)
+        meta(property = "og:image" content)
+        meta(property = "og:description" content)
+        meta(property = "og:keywords" content)
+        meta(property = "og:image:width" content)
+        meta(property = "og:image:height" content)
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        include _styles.pug
+        include _scripts.pug
+    body
+        include _svg.pug
+        .wrapper
+            include components/header/header.pug
+            include components/contact/contact.pug
+            include components/footer/footer.pug
+        script(src="js/table.js")

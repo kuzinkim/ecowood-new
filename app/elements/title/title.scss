@@ -1,0 +1,12 @@
+.title{
+    color:#107c03;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+
+    @include media-breakpoint-down(mobile) {
+        font-size: 30px;
+    }
+}

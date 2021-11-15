@@ -1,0 +1,64 @@
+.detail-slider
+    .detail-slider__title Конвективные сушильные камеры
+    .detail-slider__inner 
+        .detail-slider__column.detail-slider__column--slider
+            .detail-slider-top.swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        a(href="assets/images/product1.jpg" data-fslightbox)
+                            img(src="assets/images/product1.jpg", alt="")
+                    .swiper-slide
+                        a(href="assets/images/detail.jpg" data-fslightbox)
+                            img(src="assets/images/detail.jpg", alt="")
+                    .swiper-slide
+                        a(href="assets/images/product1.jpg" data-fslightbox)
+                            img(src="assets/images/product1.jpg", alt="")
+                    .swiper-slide
+                        a(href="assets/images/detail.jpg" data-fslightbox)
+                            img(src="assets/images/detail.jpg", alt="")
+                    .swiper-slide
+                        a(href="assets/images/product1.jpg" data-fslightbox)
+                            img(src="assets/images/product1.jpg", alt="")
+            .detail-slider-wrapper 
+                .detail-slider-thumbs.swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="assets/images/product1.jpg", alt="")
+                        .swiper-slide
+                            img(src="assets/images/detail.jpg", alt="")
+                        .swiper-slide
+                            img(src="assets/images/product1.jpg", alt="")
+                        .swiper-slide
+                            img(src="assets/images/detail.jpg", alt="")
+                        .swiper-slide
+                            img(src="assets/images/product1.jpg", alt="")
+                .detail-slider__arrow.detail-slider__arrow--prev
+                    <svg class="arrow-icon" width="21" height="18">
+                        <use xlink:href="assets/images/sprite.svg#arrow"></use>
+                    </svg>
+                .detail-slider__arrow.detail-slider__arrow--next
+                    <svg class="arrow-icon" width="21" height="18">
+                        <use xlink:href="assets/images/sprite.svg#arrow"></use>
+                    </svg>
+        .detail-slider__column.detail-slider__column--spec
+            h1.detail__title Сушильные камеры EcoWood
+            .detail-slider__spec
+                span.detail-slider__spec-text Преимущества:
+                ul
+                    li Мощный алюминиевый каркас
+                    li Полностью двухсторонняя профилированная алюминиевая обшивка стен
+                    li Профилированная алюминиевая крыша
+                    li Толщина внутреннего алюминия 1,0 мм
+                    li Удобные размеры для загрузки 6,6 метра
+                    li Трёхходовой кран Belimo (Швейцария)
+        .detail-slider__column.detail-slider__column--order
+            .detail-order-top 
+                span.detail-order__price от <span>1 910 400р.</span>
+                .detail-order-wrap
+                    span.detail-order__text.detail-order__text--stock В наличии
+                .detail-order-wrap
+                    span.detail-order__text.detail-order__text--gar Гарантия 2 года
+            .detail-order-bottom 
+                a.main__button.main__button--green.js-popup-show(href="#" data-content=".js-popup" data-ajax="/form-order.html" ) Заказать
+                a.main__button.main__button--red.js-popup-show(href="#" data-content=".js-popup-leasing" data-ajax="/form-leasing.html") Заявка на лизинг
+                span.detail-order-bottom__text Не можете выбрать? <a href="#">Поможем</a>

@@ -1,0 +1,14 @@
+.section{
+    padding-bottom: 40px;
+    padding-top: 100px;
+    &__title{
+        margin-bottom: 32px;
+    }
+    &__text{
+        display: block;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+   

@@ -1,0 +1,232 @@
+.popup{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 990;
+    opacity: 0;
+    visibility: hidden;
+    overflow: auto;
+    padding: 20px 0;
+    align-items: center;
+    transition: all 0.4s ease;
+    display: flex;
+    &.open{
+        visibility: visible;
+        opacity: 1;
+        .popup__content{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__content{
+        width: 768px;
+        max-width: 100%;
+        background-color: #fff;
+        position: relative;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+
+        &--video{
+            background-color: transparent;
+            width: 1200px;
+            max-width: 100%;
+
+            .popup__close{
+                top: 20px;
+                right: 20px;
+            }
+        }
+
+        &--project{
+            width: 100%;
+
+            .popup__close{
+                top: -35px;
+                right: -3px;
+            }
+
+            .popup__close-line{
+                background-color: #fff;
+            }
+        }
+    }
+
+    &-wrap{
+        margin: auto;
+    }
+
+    &__inner{
+        padding: 40px 70px 50px 70px;
+
+        @include media-breakpoint-down(mobile) {
+            padding: 40px 20px 50px 20px;
+        }
+    }
+
+    &__close{
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+
+        @include media-breakpoint-down(mobile) {
+            top: 20px;
+            right: 20px;
+        }
+
+        &-line{
+            width: 2px;
+            height: 100%;
+            background-color: #979797;
+            display: block;
+            position: absolute;
+            right: 12px;
+
+            &--left{
+                transform: rotate(-45deg);
+            }
+            &--right{
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &__title{
+        padding: 0 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__btn{
+        
+        &:disabled{
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    }
+
+    &__description{
+        display: block;
+        color: #107c03;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    &--success{
+        text-align: center;
+
+        .popup__btn{
+            margin-top: 45px;
+        }
+    }
+}
+
+.form{
+
+    &__button{
+        text-align: center;
+        margin-top: 49px;
+    }
+
+    &__label{
+        display: inline-block;
+        position: relative;
+        left: 20px;
+        background-color: #fff;
+        top: 10px;
+        padding: 0 10px;
+        font-weight: 600;
+        color: #107c03;
+    }
+
+    &__input,
+    &__textarea{
+        display: block;
+        width: 100%;
+        border: 1px solid #b2c59e;
+        border-radius: 10px;
+        padding: 24px 30px;
+        font-weight: 500;
+
+        &::placeholder{
+            color: #ccc;
+            font-weight: 600;
+        }
+    }
+
+    &__field{
+        margin-bottom: 28px;
+    }
+}
+
+.button-up{
+    position: fixed;
+    right: 153px;
+    bottom: 100px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 0.95);
+    cursor: pointer;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(250%);
+    transition: transform .4s ease;
+
+    @include media-breakpoint-down(tablet) {
+        right: 50px;
+        bottom: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    @include media-breakpoint-down(mobile) {
+        right: 20px;
+        bottom: 20px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &__icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-44%, -50%) rotate(270deg);
+        display: block;
+
+        @include media-breakpoint-down(tablet) {
+            transform: translate(-37%, -50%) rotate(270deg);
+        }
+
+        svg.arrow-up{
+            width: 39px;
+            height: 49px;
+            fill: #e87e00;
+
+            @include media-breakpoint-down(tablet) {
+                width: 19px;
+                height: 22px;
+            }
+        }
+    }
+    &.is-show{
+        transform: translateY(0);
+
+        &:hover{
+            transform: translateY(0) scale(1.1);
+        }
+    }
+
+}

@@ -1,0 +1,59 @@
+
+<div class="popup__title">
+  <h2 class="title">Заказать оборудование в лизинг</h2>
+</div>
+<form class="popup__form form js-form-leasing" action="#">
+  <input type="hidden" name="title" value="Заявка на лизинг"/>
+  <div class="form__field">
+    <label class="form__label">Ваше имя</label>
+    <input class="form__input" type="text" name="name" placeholder="Александр" data-validate-field="name" autocomplete="off"/>
+  </div>
+  <div class="form__field">
+    <label class="form__label">E-mail</label>
+    <input class="form__input" type="email" name="email" placeholder="E-mail" data-validate-field="email" autocomplete="off"/>
+  </div>
+  <div class="form__field">
+    <label class="form__label">Ваш телефон</label>
+    <input class="form__input" type="text" name="phone" placeholder="+7(___)___-__-__" data-validate-field="myField" autocomplete="off" id="phone-mask-leasing"/>
+  </div>
+  <div class="form__field">
+    <label class="form__label">Сообщение</label>
+    <textarea class="form__textarea" name="text" cols="5" rows="5" placeholder="Ваше сообщение" data-validate-field="text" id="text"></textarea>
+  </div>
+  <div class="form__button">
+    <button class="popup__btn button" value="Отправить">Отправить</button>
+  </div>
+</form>
+<div class="popup__close js-close"><span class="popup__close-line popup__close-line--left"></span><span class="popup__close-line popup__close-line--right"></span></div>
+<script>var phoneMaskLeasing = IMask(
+    document.getElementById('phone-mask-leasing'), {
+        mask: '+{7}(000)000-00-00'
+    });
+
+new window.JustValidate('.js-form-leasing', {
+    rules: {
+        name: {
+            required: true
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        myField: {
+            required: true,
+            minLength: 16,
+            maxLength: 16,
+        }
+    },
+
+    messages: {
+        name: 'Пожалуйста, введите ваше имя',
+        email: 'Пожалуйста, введите корректный адрес электронной почты',
+        myField: 'Пожалуйста, введите корректный номер телефона'
+    },
+
+    focusWrongField: true,
+
+    submitHandler: submitFormHandler,
+});
+</script>

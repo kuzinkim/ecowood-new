@@ -1,0 +1,26 @@
+.popup.js-popup
+    .popup-wrap
+        .popup__content
+            .popup__inner.js-popup-content
+
+.popup.popup--success.js-popup-success
+    .popup-wrap
+        .popup__content.js-popup-success
+            .popup__inner
+                .popup__title
+                    h2.title Спасибо,
+                span.popup__description Ваша заявка на лизинг принята!
+                span.popup__description Наши специалисты скоро свяжутся с Вами!
+                button.popup__btn.button.js-close Вернуться на сайт    
+            .popup__close.js-close
+                span.popup__close-line.popup__close-line--left
+                span.popup__close-line.popup__close-line--right
+.popup.popup--project.js-popup-project
+    .popup-wrap
+        .popup__content.popup__content--project
+            .popup__close.js-close
+                span.popup__close-line.popup__close-line--left
+                span.popup__close-line.popup__close-line--right
+a(href="#header").button-up
+    .button-up__icon
+        +svg('arrow-up')

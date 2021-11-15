@@ -1,0 +1,72 @@
+.header.lock-padding#header
+    .container
+        .header__inner
+            .header__wrap
+                a(href="#main").header__logo
+                    img(src="assets/images/logo.svg", alt="logo")
+            .header-contact
+                .header-contact__mail
+                    a(href="mailto:info@ecowood.com.ru") info@ecowood.com.ru
+                .header-contact__phone
+                    a(href="tel:+74951376255") + 7 (495) 137-62-55
+                    a(href="tel:88005118355") 8 (800) 511-83-55
+                span.header__text Производим сушильные камеры и котельные установки
+            .header__menu
+                .header__catalog.catalog
+                    a(href="#").catalog__btn Каталог
+                    .catalog__dropdown
+                        .catalog__item
+                            .catalog__item-head 
+                                .catalog__pic 
+                                    img(src="assets/images/catalog1.png", alt="")
+                                span.catalog__name Сушильные<br> камеры
+                            ul.catalog__list
+                                li.catalog__list-item
+                                    a(href="/detail.html") Пресс-вакуумные сушильные камеры ML
+                                li.catalog__list-item
+                                    a(href="/detail.html") Турбовакуумные сушильные камеры для слэбов EcoWood
+                                li.catalog__list-item
+                                    a(href="/detail.html") Конвективные сушильные камеры
+                        .catalog__item
+                            .catalog__item-head 
+                                .catalog__pic
+                                    img(src="assets/images/catalog2.png", alt="")
+                                span.catalog__name Котельные<br> установки
+                            ul.catalog__list
+                                li.catalog__list-item
+                                    a(href="/detail.html") Котельные на отходах
+                                li.catalog__list-item
+                                    a(href="/detail.html") Duis aute irure dolor in reprehenderit in voluptate velit
+                                li.catalog__list-item
+                                    a(href="/detail.html") Esse cillum dolore eu fugiat nulla pariatur excepteur sint
+                        span.header__close-btn.js-close-catalog
+                            <svg class="arrow-icon" width="22" height="18">
+                                <use xlink:href="assets/images/sprite.svg#arrow"></use>
+                            </svg>
+                .header__search
+                    form.header__search-form.form-search(action="#")
+                        .form-search__field
+                            input(type="text").header__search-input
+                            button.header__search-btn
+                    .header-contact--mobile.mail
+                        a(href="mailto:info@ecowood.com.ru")
+                            img(src="assets/images/mail.png", alt="")
+                    .header-contact--mobile.phone
+                        a(href="tel:+74951376255")
+                            img(src="assets/images/tel.png", alt="")
+                nav.header__nav 
+                    .header__nav-item
+                        a(href="#about").header__nav-link О компании
+                    .header__nav-item
+                        a(href="#service").header__nav-link Услуги
+                    .header__nav-item
+                        a(href="#contact").header__nav-link Контакты
+                    span.header__close-btn.js-close-menu
+                        <svg class="arrow-icon" width="22" height="18">
+                            <use xlink:href="assets/images/sprite.svg#arrow"></use>
+                        </svg>
+                .header__burger.burg.js-burg
+                    .burg__line
+                    .burg__line
+                    .burg__line
+                    .burg__line

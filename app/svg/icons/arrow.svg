@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 30">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: rgba(255,255,255,0.0.3);
+                stroke: rgba(255,255,255,0.3);
+                stroke-miterlimit: 10;
+                stroke-width: 3px;
+            }
+        </style>
+    </defs>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="icons">
+            <path class="cls-1"
+                d="M19.29,27.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l13-13a1,1,0,0,0,0-1.42l-13-13a1,1,0,0,0-1.42,1.42L30.59,14H2a1,1,0,0,0,0,2H30.59Z" />
+        </g>
+    </g>
+</svg>

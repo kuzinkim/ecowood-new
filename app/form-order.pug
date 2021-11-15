@@ -1,0 +1,22 @@
+include _mixins.pug
+.popup__title
+    h2.title Заказать конвективные сушильные камеры
+form.popup__form.form.js-form-order(action="#")
+    input(type="hidden" name="title" value="Задайте ваш вопрос")
+    .form__field
+        label.form__label Ваше имя
+        input.form__input(type="text", name="name" placeholder="Александр" data-validate-field="name" autocomplete="off")
+    .form__field
+        label.form__label E-mail
+        input.form__input(type="email", name="email" placeholder="E-mail" data-validate-field="email" autocomplete="off")
+    .form__field
+        label.form__label Ваш телефон
+        input.form__input(type="text", name="phone" placeholder="+7(___)___-__-__" data-validate-field="myField" autocomplete="off" id="phone-mask-order")
+    .form__field
+        label.form__label Сообщение
+        textarea.form__textarea(name="text", cols="5", rows="5" placeholder="Ваше сообщение" data-validate-field="text" id="text")
+    .form__button
+        button.popup__btn.button(value="Отправить") Отправить
+script
+    include components/popup/order-form.js
+
