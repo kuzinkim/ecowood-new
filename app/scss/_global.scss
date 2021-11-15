@@ -557,12 +557,12 @@ svg {
     overflow: hidden
 }
 
-.button span {
+.detail .button span {
     font-weight: 700;
     position: relative
 }
 
-.button::before {
+.detail .button::before {
     content: '';
     opacity: 0;
     position: absolute;
@@ -574,20 +574,20 @@ svg {
     transition: opacity .2s ease-in-out
 }
 
-.button:active::before {
+.detail .button:active::before {
     background: linear-gradient(0deg,#005aa6,#004986)
 }
 
-.button_send {
+.detail .button_send {
     border-radius: 22px;
     transition: none
 }
 
-.button_send::before {
+.detail .button_send::before {
     background-color: #003d71
 }
 
-.button_send:active::before {
+.detail .button_send:active::before {
     background-color: #003d71
 }
 
@@ -787,12 +787,12 @@ svg {
 }
 
 @media screen and (min-width: 768px) {
-    .button:hover:not(.error):not(.notHover) {
+    .detail .button:hover:not(.error):not(.notHover) {
         color:#fff;
         border: 1px solid #005aa6
     }
 
-    .button:hover:not(.error):not(.notHover)::before {
+    .detail .button:hover:not(.error):not(.notHover)::before {
         opacity: 1
     }
 
@@ -2435,7 +2435,7 @@ svg {
     margin-bottom: 40px
 }
 
-button {
+.detail button {
     cursor: pointer
 }
 
@@ -2512,12 +2512,12 @@ button {
         color:#005aa6
     }
 
-    .button:hover:not(.error):not(.notHover) {
+    .detail .button:hover:not(.error):not(.notHover) {
         color: #fff;
         border: 1px solid #005aa6
     }
 
-    .button:hover:not(.error):not(.notHover)::before {
+    .detail .button:hover:not(.error):not(.notHover)::before {
         opacity: 1
     }
 }
