@@ -17,6 +17,10 @@ form.popup__form.form.js-form-order(action="#")
         textarea.form__textarea(name="text", cols="5", rows="5" placeholder="Ваше сообщение" data-validate-field="text" id="text")
     .form__button
         button.popup__btn.button(value="Отправить") Отправить
+.popup__close.js-close
+    span.popup__close-line.popup__close-line--left
+    span.popup__close-line.popup__close-line--right
+
 script
     include components/popup/order-form.js
 
