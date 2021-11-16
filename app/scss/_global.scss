@@ -173,64 +173,64 @@ textarea{
     }
 }
 
-#model .compareTable{position:relative}
-#model .compareTable.compareTable_search{margin-bottom:15px}
-#model .compareTable.compareTable_search .tcell{font-size:11px;line-height:1.2}
-#model .compareTable.compareTable_search .th{font-weight:600}
-#model .compareTable.foldable::after{content:'';-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:absolute;z-index:3;bottom:50px;right:0;left:0;height:0;opacity:0;background:linear-gradient(0deg,#fff,rgba(255,255,255,0));transition:opacity .2s ease-in-out,height .2s ease-in-out}
-#model .compareTable.folded::after{height:100px;opacity:1}
-#model .compareTable .tctrl{z-index:3;position:absolute;top:50%;left:0;right:0;height:0;width:100%}
-#model .compareTable .tbtn{display:none;position:absolute;z-index:1;top:50%;width:30px;height:30px;color:#005aa6;border-radius:2px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);background-color:rgba(235, 202, 11, 0.1);transition:opacity .2s ease-in-out,background-color .2s ease-in-out;cursor:pointer}
-#model .compareTable .tbtn svg{top:50%;left:50%;position:absolute;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
-#model .compareTable .tbtn_prev{left:0}
-#model .compareTable .tbtn_next{right:0}
-#model .compareTable .tbtn_next svg{-webkit-transform:translate(-50%,-50%) scale(-1,1);-ms-transform:translate(-50%,-50%) scale(-1,1);transform:translate(-50%,-50%) scale(-1,1)}
-#model .compareTable .tbtn_inactive{opacity:.35;cursor:default}
-#model .compareTable .thead{position:relative;z-index:3;display:flex;border-radius:2px;margin-bottom:-10px}
-#model .compareTable .tline{position:relative;display:flex;transition:background-color .2s ease-in-out; font-weight: 700;}
-#model .compareTable .tline.hide{display:none}
-#model .compareTable .tlink{top:0;left:0;right:0;bottom:0;z-index:2;position:absolute}
-#model .compareTable .tw{z-index:1;overflow:hidden;position:relative;flex:2 0 0}
-#model .compareTable .tr{display:flex;position:relative;height:100%;transition:left .2s ease-in-out}
-#model .compareTable .td,.compareTable .th{color:#141414;flex:2 0 0;display:flex;flex-wrap:wrap;align-items:center;position:relative;}
-#model .compareTable .td_cell{justify-content:center;text-align:center}
-#model .compareTable .td span,.compareTable .th span{font-weight:inherit}
-#model .compareTable .th{color:#828282;margin:10px 0;font-weight:500}
-#model .compareTable .sortRow .tIconSort{top:50%;left:100%;-webkit-transform:translate(-50%,-50%) rotate(180deg);-ms-transform:translate(-50%,-50%) rotate(180deg);transform:translate(-50%,-50%) rotate(180deg)}
-#model .compareTable .sortRow.decrease .tIconSort{-webkit-transform:translate(-50%,-50%) rotate(180deg) scale(-1,1);-ms-transform:translate(-50%,-50%) rotate(180deg) scale(-1,1);transform:translate(-50%,-50%) rotate(180deg) scale(-1,1)}
-#model .compareTable .dupIn.hide,.compareTable .dupOut.hide{display:none}
-#model .compareTable .tcell{font-weight:inherit;padding:25px 8px;font-size:16px;line-height:1.5;width:100%;text-align:center;word-break:break-word;position:relative;}
-#model .compareTable .tcell_order{position:relative;z-index:3;display:flex;flex-wrap:wrap;align-items:center;justify-content:center}
-#model .compareTable .tcell a{position:relative;z-index:3;font-size:inherit}
-#model .compareTable .tcell img{max-width:100%;max-height:70px}
-#model .compareTable .counterValue{margin-right:10px}
-#model .compareTable .counterValue__input{max-width:45px;text-align:center;padding:4px 6px}
-#model .compareTable .tIconSort{position:absolute;z-index:2;top:100%;left:50%;display:flex;align-items:center;justify-content:center;width:20px;height:20px;padding:4px;border-radius:50%;background-color:#fff;color:rgba(79,79,79,.5);-webkit-transform:translate(-50%,-50%) rotate(-90deg);-ms-transform:translate(-50%,-50%) rotate(-90deg);transform:translate(-50%,-50%) rotate(-90deg);transition:transform .2s ease-in-out,color .2s ease-in-out,-webkit-transform .2s ease-in-out}
-#model .compareTable .tIconStock{color:#2da60c}
-#model .compareTable .customLink{display:inline}
-#model .compareTable .tpaging{margin-top:30px;display:flex;flex-wrap:wrap}
-#model .compareTable .tpaging::before{content:'';flex:1}
-#model .compareTable .tpaging .hide,.compareTable .tpaging_fold::before{display:none}
-#model .compareTable .tpaging__more{margin:0 30px}
-#model .compareTable .tpaging__more:focus{outline:0}
-#model .compareTable .tpaging__fold{margin:0 auto;border:none;background:0 0;font-size:14px;line-height:1.5;color:#969696;transition:color .2s ease-in-out;cursor:pointer}
-#model .compareTable .tpaging__fold:focus{outline:0}
-#model .compareTable .tpaging__fold span{vertical-align:middle}
-#model .compareTable .tpaging__fold svg{color:#005aa6;vertical-align:middle;-webkit-transform:rotate(-90deg) scale(-1,1);-ms-transform:rotate(-90deg) scale(-1,1);transform:rotate(-90deg) scale(-1,1)}
-#model .compareTable .tpaging__fold:not(.folded) span:nth-child(1){display:none}
-#model .compareTable .tpaging__fold.folded svg{-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg)}
-#model .compareTable .tpaging__fold.folded span:nth-child(2){display:none}
-#model .compareTable .tpaging__pages{flex:1;display:flex;align-items:center;justify-content:flex-end}
-#model .compareTable .tpaging__page{margin:0 2px}
-#model .compareTable .tpaging__page:focus{outline:0}
-#model .compareTable .tpaging__dots{margin:0 2px}
+.compareTable{position:relative}
+.compareTable.compareTable_search{margin-bottom:15px}
+.compareTable.compareTable_search .tcell{font-size:11px;line-height:1.2}
+.compareTable.compareTable_search .th{font-weight:600}
+.compareTable.foldable::after{content:'';-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:absolute;z-index:3;bottom:50px;right:0;left:0;height:0;opacity:0;background:linear-gradient(0deg,#fff,rgba(255,255,255,0));transition:opacity .2s ease-in-out,height .2s ease-in-out}
+.compareTable.folded::after{height:100px;opacity:1}
+.compareTable .tctrl{z-index:3;position:absolute;top:50%;left:0;right:0;height:0;width:100%}
+.compareTable .tbtn{display:none;position:absolute;z-index:1;top:50%;width:30px;height:30px;color:#005aa6;border-radius:2px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);background-color:rgba(235, 202, 11, 0.1);transition:opacity .2s ease-in-out,background-color .2s ease-in-out;cursor:pointer}
+.compareTable .tbtn svg{top:50%;left:50%;position:absolute;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.compareTable .tbtn_prev{left:0}
+.compareTable .tbtn_next{right:0}
+.compareTable .tbtn_next svg{-webkit-transform:translate(-50%,-50%) scale(-1,1);-ms-transform:translate(-50%,-50%) scale(-1,1);transform:translate(-50%,-50%) scale(-1,1)}
+.compareTable .tbtn_inactive{opacity:.35;cursor:default}
+.compareTable .thead{position:relative;z-index:3;display:flex;border-radius:2px;margin-bottom:-10px}
+.compareTable .tline{position:relative;display:flex;transition:background-color .2s ease-in-out; font-weight: 700;}
+.compareTable .tline.hide{display:none}
+.compareTable .tlink{top:0;left:0;right:0;bottom:0;z-index:2;position:absolute}
+.compareTable .tw{z-index:1;overflow:hidden;position:relative;flex:2 0 0}
+.compareTable .tr{display:flex;position:relative;height:100%;transition:left .2s ease-in-out}
+.compareTable .td,.compareTable .th{color:#141414;flex:2 0 0;display:flex;flex-wrap:wrap;align-items:center;position:relative;}
+.compareTable .td_cell{justify-content:center;text-align:center}
+.compareTable .td span,.compareTable .th span{font-weight:inherit}
+.compareTable .th{color:#828282;margin:10px 0;font-weight:500}
+.compareTable .sortRow .tIconSort{top:50%;left:100%;-webkit-transform:translate(-50%,-50%) rotate(180deg);-ms-transform:translate(-50%,-50%) rotate(180deg);transform:translate(-50%,-50%) rotate(180deg)}
+.compareTable .sortRow.decrease .tIconSort{-webkit-transform:translate(-50%,-50%) rotate(180deg) scale(-1,1);-ms-transform:translate(-50%,-50%) rotate(180deg) scale(-1,1);transform:translate(-50%,-50%) rotate(180deg) scale(-1,1)}
+.compareTable .dupIn.hide,.compareTable .dupOut.hide{display:none}
+.compareTable .tcell{font-weight:inherit;padding:25px 8px;font-size:16px;line-height:1.5;width:100%;text-align:center;word-break:break-word;position:relative;}
+.compareTable .tcell_order{position:relative;z-index:3;display:flex;flex-wrap:wrap;align-items:center;justify-content:center}
+.compareTable .tcell a{position:relative;z-index:3;font-size:inherit}
+.compareTable .tcell img{max-width:100%;max-height:70px}
+.compareTable .counterValue{margin-right:10px}
+.compareTable .counterValue__input{max-width:45px;text-align:center;padding:4px 6px}
+.compareTable .tIconSort{position:absolute;z-index:2;top:100%;left:50%;display:flex;align-items:center;justify-content:center;width:20px;height:20px;padding:4px;border-radius:50%;background-color:#fff;color:rgba(79,79,79,.5);-webkit-transform:translate(-50%,-50%) rotate(-90deg);-ms-transform:translate(-50%,-50%) rotate(-90deg);transform:translate(-50%,-50%) rotate(-90deg);transition:transform .2s ease-in-out,color .2s ease-in-out,-webkit-transform .2s ease-in-out}
+.compareTable .tIconStock{color:#2da60c}
+.compareTable .customLink{display:inline}
+.compareTable .tpaging{margin-top:30px;display:flex;flex-wrap:wrap}
+.compareTable .tpaging::before{content:'';flex:1}
+.compareTable .tpaging .hide,.compareTable .tpaging_fold::before{display:none}
+.compareTable .tpaging__more{margin:0 30px}
+.compareTable .tpaging__more:focus{outline:0}
+.compareTable .tpaging__fold{margin:0 auto;border:none;background:0 0;font-size:14px;line-height:1.5;color:#969696;transition:color .2s ease-in-out;cursor:pointer}
+.compareTable .tpaging__fold:focus{outline:0}
+.compareTable .tpaging__fold span{vertical-align:middle}
+.compareTable .tpaging__fold svg{color:#005aa6;vertical-align:middle;-webkit-transform:rotate(-90deg) scale(-1,1);-ms-transform:rotate(-90deg) scale(-1,1);transform:rotate(-90deg) scale(-1,1)}
+.compareTable .tpaging__fold:not(.folded) span:nth-child(1){display:none}
+.compareTable .tpaging__fold.folded svg{-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg)}
+.compareTable .tpaging__fold.folded span:nth-child(2){display:none}
+.compareTable .tpaging__pages{flex:1;display:flex;align-items:center;justify-content:flex-end}
+.compareTable .tpaging__page{margin:0 2px}
+.compareTable .tpaging__page:focus{outline:0}
+.compareTable .tpaging__dots{margin:0 2px}
 .compareTable_specifications .td_large .tcell,.compareTable_specifications .th_large .tcell{text-align:left;padding:15px}
-#model .tline{border-top: 1px solid #E0E0E0;}
-#model .tline > .td .tcell{text-align: left; font-weight: 700;}
-#model .thead > .th .tcell{text-align: left;}
-#model .compareTable .tbtn_prev svg{transform: translate(-50%, -50%) rotate(180deg);}
-#model .compareTable .tbtn_next svg{transform: translate(-50%, -50%) rotate(0deg);}
-#model .td_button{    
+.tline{border-top: 1px solid #E0E0E0;}
+.tline > .td .tcell{text-align: left; font-weight: 700;}
+.thead > .th .tcell{text-align: left;}
+.compareTable .tbtn_prev svg{transform: translate(-50%, -50%) rotate(180deg);}
+.compareTable .tbtn_next svg{transform: translate(-50%, -50%) rotate(0deg);}
+.td_button{    
     border: 1px solid #FF6600;
     border-radius: 10px;
     color: #FF6600;
@@ -241,41 +241,47 @@ textarea{
     cursor: pointer;
 }
 
-#model .thead .th{flex: 1.5 0 0}
-#model .tline .td_name{flex: 1.5 0 0}
-#model .compareTable .td-button{flex: 3 0 0; display: flex; justify-content: flex-end;}
+.thead .th{flex: 1.5 0 0}
+.tline .td_name{flex: 1.5 0 0}
+.compareTable .td-button{flex: 3 0 0; display: flex; justify-content: flex-end;}
 @media screen and (min-width:992px){
-#model .compareTable .td_large,.compareTable .th_large{flex:3 0 0}
+.compareTable .td_large,.compareTable .th_large{flex:3 0 0}
 }
 @media screen and (max-width:1279px){
-#model .compareTable .button_order{font-size:12px;padding:5px 10px}
+.compareTable .button_order{font-size:12px;padding:5px 10px}
 }
 @media screen and (max-width:991px){
-#model .compareTable .counterValue{margin:0 0 10px;width:100%}
-#model .compareTable.compareTable_finance .td_large .tcell{padding:15px 0 15px 20px}
-#model .compareTable.compareTable_finance .th_empty:first-child,
-#model .compareTable.compareTable_finance .th_empty:last-child,
-#model .compareTable.compareTable_finance .td_empty:first-child,
-#model .compareTable.compareTable_finance .td_empty:last-child{display:none}
+.compareTable .counterValue{margin:0 0 10px;width:100%}
+.compareTable.compareTable_finance .td_large .tcell{padding:15px 0 15px 20px}
+.compareTable.compareTable_finance .th_empty:first-child,
+.compareTable.compareTable_finance .th_empty:last-child,
+.compareTable.compareTable_finance .td_empty:first-child,
+.compareTable.compareTable_finance .td_empty:last-child{display:none}
 }
 @media screen and (max-width:767px){
-#model .compareTable .tpaging{display:block}
-#model .compareTable .tpaging__more{padding:8px 20px;margin:0 auto 20px}
-#model .compareTable .tpaging__pages{justify-content:center}
-#model .compareTable.compareTable_finance .tline_accentHead,
-#model .compareTable.compareTable_finance .tline_accent,
-#model .compareTable.compareTable_finance .tline_accentFooter{border:0}
-#model .compareTable.compareTable_finance .th_empty,
-#model .compareTable.compareTable_finance .td_empty{display:none}
+.compareTable .tpaging{display:block}
+.compareTable .tpaging__more{padding:8px 20px;margin:0 auto 20px}
+.compareTable .tpaging__pages{justify-content:center}
+.compareTable.compareTable_finance .tline_accentHead,
+.compareTable.compareTable_finance .tline_accent,
+.compareTable.compareTable_finance .tline_accentFooter{border:0}
+.compareTable.compareTable_finance .th_empty,
+.compareTable.compareTable_finance .td_empty{display:none}
 }
 @media screen and (max-width:479px){
-#model .compareTable .tbtn{width:20px;height:30px}
-#model .compareTable .tline .button{padding:3px 5px;font-size:11px}
-#model .compareTable .tcell{font-size:12px;padding:10px 5px}
-#model .compareTable .counterValue__input{max-width:30px;padding:3px}
+.compareTable .tbtn{width:20px;height:30px}
+.compareTable .tline .button{padding:3px 5px;font-size:11px}
+.compareTable .tcell{font-size:12px;padding:10px 5px}
+.compareTable .counterValue__input{max-width:30px;padding:3px}
 .compareTable_specifications .td_large .tcell,.compareTable_specifications .th_large .tcell{padding:10px}
-#model .td_button {border: 1px solid #FBDA1B;width: 175px;padding: 5px 0;font-size: 12px;}
-#model .td-button{justify-content: flex-end;}
+.td_button {border: 1px solid #FBDA1B;width: 175px;padding: 5px 0;font-size: 12px;}
+.td-button{justify-content: flex-end;}
+}
+.compareTable_finance .tline{
+    border: 0;
+}
+.compareTable_finance .tline > .td .tcell{
+    font-weight: normal;
 }
 
 /*!nouislider - 10.0.0 - 2017-05-28 14:52:48*/
@@ -2703,14 +2709,16 @@ svg {
     .financeCalculator__inner,
     .financeCalculator__wrapTable{
         width: 100%;
+        padding-top: 0;
+    }
+
+    .financeCalculator__wrapTable--right{
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     .financeCalculator__inner{
         margin-bottom: 32px;
-    }
-
-    .financeCalculator__wrapTable--right{
-        padding-bottom: 60px;
     }
 
     .financeCalculator__selection_checkboxes .td_large{
@@ -2718,11 +2726,16 @@ svg {
     }
 
     .financeCalculator__wrapTable--left .financeCalculator__table{
-        padding-bottom: 30px;
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .financeCalculator__form{
         padding-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .financeCalculator__selection_checkboxes .td_large{
@@ -2750,8 +2763,8 @@ svg {
     .financeCalculator__wrapTable--right,
     .financeCalculator__wrapTable--left .financeCalculator__table,
     .financeCalculator__form{
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .leasingFormData__input,

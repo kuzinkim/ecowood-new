@@ -675,20 +675,20 @@ textarea {
     .detail__buttons .btn--border {
       margin-right: 0; }
 
-#model .compareTable {
+.compareTable {
   position: relative; }
 
-#model .compareTable.compareTable_search {
+.compareTable.compareTable_search {
   margin-bottom: 15px; }
 
-#model .compareTable.compareTable_search .tcell {
+.compareTable.compareTable_search .tcell {
   font-size: 11px;
   line-height: 1.2; }
 
-#model .compareTable.compareTable_search .th {
+.compareTable.compareTable_search .th {
   font-weight: 600; }
 
-#model .compareTable.foldable::after {
+.compareTable.foldable::after {
   content: '';
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -708,11 +708,11 @@ textarea {
   -o-transition: opacity .2s ease-in-out,height .2s ease-in-out;
   transition: opacity .2s ease-in-out,height .2s ease-in-out; }
 
-#model .compareTable.folded::after {
+.compareTable.folded::after {
   height: 100px;
   opacity: 1; }
 
-#model .compareTable .tctrl {
+.compareTable .tctrl {
   z-index: 3;
   position: absolute;
   top: 50%;
@@ -721,7 +721,7 @@ textarea {
   height: 0;
   width: 100%; }
 
-#model .compareTable .tbtn {
+.compareTable .tbtn {
   display: none;
   position: absolute;
   z-index: 1;
@@ -739,7 +739,7 @@ textarea {
   transition: opacity .2s ease-in-out,background-color .2s ease-in-out;
   cursor: pointer; }
 
-#model .compareTable .tbtn svg {
+.compareTable .tbtn svg {
   top: 50%;
   left: 50%;
   position: absolute;
@@ -747,22 +747,22 @@ textarea {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-#model .compareTable .tbtn_prev {
+.compareTable .tbtn_prev {
   left: 0; }
 
-#model .compareTable .tbtn_next {
+.compareTable .tbtn_next {
   right: 0; }
 
-#model .compareTable .tbtn_next svg {
+.compareTable .tbtn_next svg {
   -webkit-transform: translate(-50%, -50%) scale(-1, 1);
   -ms-transform: translate(-50%, -50%) scale(-1, 1);
   transform: translate(-50%, -50%) scale(-1, 1); }
 
-#model .compareTable .tbtn_inactive {
+.compareTable .tbtn_inactive {
   opacity: .35;
   cursor: default; }
 
-#model .compareTable .thead {
+.compareTable .thead {
   position: relative;
   z-index: 3;
   display: -webkit-box;
@@ -772,7 +772,7 @@ textarea {
   border-radius: 2px;
   margin-bottom: -10px; }
 
-#model .compareTable .tline {
+.compareTable .tline {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -783,10 +783,10 @@ textarea {
   transition: background-color .2s ease-in-out;
   font-weight: 700; }
 
-#model .compareTable .tline.hide {
+.compareTable .tline.hide {
   display: none; }
 
-#model .compareTable .tlink {
+.compareTable .tlink {
   top: 0;
   left: 0;
   right: 0;
@@ -794,7 +794,7 @@ textarea {
   z-index: 2;
   position: absolute; }
 
-#model .compareTable .tw {
+.compareTable .tw {
   z-index: 1;
   overflow: hidden;
   position: relative;
@@ -803,7 +803,7 @@ textarea {
       -ms-flex: 2 0 0px;
           flex: 2 0 0; }
 
-#model .compareTable .tr {
+.compareTable .tr {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -814,7 +814,7 @@ textarea {
   -o-transition: left .2s ease-in-out;
   transition: left .2s ease-in-out; }
 
-#model .compareTable .td, .compareTable .th {
+.compareTable .td, .compareTable .th {
   color: #141414;
   -webkit-box-flex: 2;
   -webkit-flex: 2 0 0;
@@ -833,37 +833,37 @@ textarea {
           align-items: center;
   position: relative; }
 
-#model .compareTable .td_cell {
+.compareTable .td_cell {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center; }
 
-#model .compareTable .td span, .compareTable .th span {
+.compareTable .td span, .compareTable .th span {
   font-weight: inherit; }
 
-#model .compareTable .th {
+.compareTable .th {
   color: #828282;
   margin: 10px 0;
   font-weight: 500; }
 
-#model .compareTable .sortRow .tIconSort {
+.compareTable .sortRow .tIconSort {
   top: 50%;
   left: 100%;
   -webkit-transform: translate(-50%, -50%) rotate(180deg);
   -ms-transform: translate(-50%, -50%) rotate(180deg);
   transform: translate(-50%, -50%) rotate(180deg); }
 
-#model .compareTable .sortRow.decrease .tIconSort {
+.compareTable .sortRow.decrease .tIconSort {
   -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(-1, 1);
   -ms-transform: translate(-50%, -50%) rotate(180deg) scale(-1, 1);
   transform: translate(-50%, -50%) rotate(180deg) scale(-1, 1); }
 
-#model .compareTable .dupIn.hide, .compareTable .dupOut.hide {
+.compareTable .dupIn.hide, .compareTable .dupOut.hide {
   display: none; }
 
-#model .compareTable .tcell {
+.compareTable .tcell {
   font-weight: inherit;
   padding: 25px 8px;
   font-size: 16px;
@@ -873,7 +873,7 @@ textarea {
   word-break: break-word;
   position: relative; }
 
-#model .compareTable .tcell_order {
+.compareTable .tcell_order {
   position: relative;
   z-index: 3;
   display: -webkit-box;
@@ -892,24 +892,24 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center; }
 
-#model .compareTable .tcell a {
+.compareTable .tcell a {
   position: relative;
   z-index: 3;
   font-size: inherit; }
 
-#model .compareTable .tcell img {
+.compareTable .tcell img {
   max-width: 100%;
   max-height: 70px; }
 
-#model .compareTable .counterValue {
+.compareTable .counterValue {
   margin-right: 10px; }
 
-#model .compareTable .counterValue__input {
+.compareTable .counterValue__input {
   max-width: 45px;
   text-align: center;
   padding: 4px 6px; }
 
-#model .compareTable .tIconSort {
+.compareTable .tIconSort {
   position: absolute;
   z-index: 2;
   top: 100%;
@@ -937,13 +937,13 @@ textarea {
   transform: translate(-50%, -50%) rotate(-90deg);
   transition: transform .2s ease-in-out,color .2s ease-in-out,-webkit-transform .2s ease-in-out; }
 
-#model .compareTable .tIconStock {
+.compareTable .tIconStock {
   color: #2da60c; }
 
-#model .compareTable .customLink {
+.compareTable .customLink {
   display: inline; }
 
-#model .compareTable .tpaging {
+.compareTable .tpaging {
   margin-top: 30px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -953,23 +953,23 @@ textarea {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
-#model .compareTable .tpaging::before {
+.compareTable .tpaging::before {
   content: '';
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1; }
 
-#model .compareTable .tpaging .hide, .compareTable .tpaging_fold::before {
+.compareTable .tpaging .hide, .compareTable .tpaging_fold::before {
   display: none; }
 
-#model .compareTable .tpaging__more {
+.compareTable .tpaging__more {
   margin: 0 30px; }
 
-#model .compareTable .tpaging__more:focus {
+.compareTable .tpaging__more:focus {
   outline: 0; }
 
-#model .compareTable .tpaging__fold {
+.compareTable .tpaging__fold {
   margin: 0 auto;
   border: none;
   background: 0 0;
@@ -981,31 +981,31 @@ textarea {
   transition: color .2s ease-in-out;
   cursor: pointer; }
 
-#model .compareTable .tpaging__fold:focus {
+.compareTable .tpaging__fold:focus {
   outline: 0; }
 
-#model .compareTable .tpaging__fold span {
+.compareTable .tpaging__fold span {
   vertical-align: middle; }
 
-#model .compareTable .tpaging__fold svg {
+.compareTable .tpaging__fold svg {
   color: #005aa6;
   vertical-align: middle;
   -webkit-transform: rotate(-90deg) scale(-1, 1);
   -ms-transform: rotate(-90deg) scale(-1, 1);
   transform: rotate(-90deg) scale(-1, 1); }
 
-#model .compareTable .tpaging__fold:not(.folded) span:nth-child(1) {
+.compareTable .tpaging__fold:not(.folded) span:nth-child(1) {
   display: none; }
 
-#model .compareTable .tpaging__fold.folded svg {
+.compareTable .tpaging__fold.folded svg {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-#model .compareTable .tpaging__fold.folded span:nth-child(2) {
+.compareTable .tpaging__fold.folded span:nth-child(2) {
   display: none; }
 
-#model .compareTable .tpaging__pages {
+.compareTable .tpaging__pages {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
@@ -1023,40 +1023,40 @@ textarea {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
-#model .compareTable .tpaging__page {
+.compareTable .tpaging__page {
   margin: 0 2px; }
 
-#model .compareTable .tpaging__page:focus {
+.compareTable .tpaging__page:focus {
   outline: 0; }
 
-#model .compareTable .tpaging__dots {
+.compareTable .tpaging__dots {
   margin: 0 2px; }
 
 .compareTable_specifications .td_large .tcell, .compareTable_specifications .th_large .tcell {
   text-align: left;
   padding: 15px; }
 
-#model .tline {
+.tline {
   border-top: 1px solid #E0E0E0; }
 
-#model .tline > .td .tcell {
+.tline > .td .tcell {
   text-align: left;
   font-weight: 700; }
 
-#model .thead > .th .tcell {
+.thead > .th .tcell {
   text-align: left; }
 
-#model .compareTable .tbtn_prev svg {
+.compareTable .tbtn_prev svg {
   -webkit-transform: translate(-50%, -50%) rotate(180deg);
       -ms-transform: translate(-50%, -50%) rotate(180deg);
           transform: translate(-50%, -50%) rotate(180deg); }
 
-#model .compareTable .tbtn_next svg {
+.compareTable .tbtn_next svg {
   -webkit-transform: translate(-50%, -50%) rotate(0deg);
       -ms-transform: translate(-50%, -50%) rotate(0deg);
           transform: translate(-50%, -50%) rotate(0deg); }
 
-#model .td_button {
+.td_button {
   border: 1px solid #FF6600;
   border-radius: 10px;
   color: #FF6600;
@@ -1066,19 +1066,19 @@ textarea {
   padding: 11px 0;
   cursor: pointer; }
 
-#model .thead .th {
+.thead .th {
   -webkit-box-flex: 1.5;
   -webkit-flex: 1.5 0 0;
       -ms-flex: 1.5 0 0px;
           flex: 1.5 0 0; }
 
-#model .tline .td_name {
+.tline .td_name {
   -webkit-box-flex: 1.5;
   -webkit-flex: 1.5 0 0;
       -ms-flex: 1.5 0 0px;
           flex: 1.5 0 0; }
 
-#model .compareTable .td-button {
+.compareTable .td-button {
   -webkit-box-flex: 3;
   -webkit-flex: 3 0 0;
       -ms-flex: 3 0 0px;
@@ -1093,73 +1093,79 @@ textarea {
           justify-content: flex-end; }
 
 @media screen and (min-width: 992px) {
-  #model .compareTable .td_large, .compareTable .th_large {
+  .compareTable .td_large, .compareTable .th_large {
     -webkit-box-flex: 3;
     -webkit-flex: 3 0 0;
         -ms-flex: 3 0 0px;
             flex: 3 0 0; } }
 
 @media screen and (max-width: 1279px) {
-  #model .compareTable .button_order {
+  .compareTable .button_order {
     font-size: 12px;
     padding: 5px 10px; } }
 
 @media screen and (max-width: 991px) {
-  #model .compareTable .counterValue {
+  .compareTable .counterValue {
     margin: 0 0 10px;
     width: 100%; }
-  #model .compareTable.compareTable_finance .td_large .tcell {
+  .compareTable.compareTable_finance .td_large .tcell {
     padding: 15px 0 15px 20px; }
-  #model .compareTable.compareTable_finance .th_empty:first-child,
-  #model .compareTable.compareTable_finance .th_empty:last-child,
-  #model .compareTable.compareTable_finance .td_empty:first-child,
-  #model .compareTable.compareTable_finance .td_empty:last-child {
+  .compareTable.compareTable_finance .th_empty:first-child,
+  .compareTable.compareTable_finance .th_empty:last-child,
+  .compareTable.compareTable_finance .td_empty:first-child,
+  .compareTable.compareTable_finance .td_empty:last-child {
     display: none; } }
 
 @media screen and (max-width: 767px) {
-  #model .compareTable .tpaging {
+  .compareTable .tpaging {
     display: block; }
-  #model .compareTable .tpaging__more {
+  .compareTable .tpaging__more {
     padding: 8px 20px;
     margin: 0 auto 20px; }
-  #model .compareTable .tpaging__pages {
+  .compareTable .tpaging__pages {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  #model .compareTable.compareTable_finance .tline_accentHead,
-  #model .compareTable.compareTable_finance .tline_accent,
-  #model .compareTable.compareTable_finance .tline_accentFooter {
+  .compareTable.compareTable_finance .tline_accentHead,
+  .compareTable.compareTable_finance .tline_accent,
+  .compareTable.compareTable_finance .tline_accentFooter {
     border: 0; }
-  #model .compareTable.compareTable_finance .th_empty,
-  #model .compareTable.compareTable_finance .td_empty {
+  .compareTable.compareTable_finance .th_empty,
+  .compareTable.compareTable_finance .td_empty {
     display: none; } }
 
 @media screen and (max-width: 479px) {
-  #model .compareTable .tbtn {
+  .compareTable .tbtn {
     width: 20px;
     height: 30px; }
-  #model .compareTable .tline .button {
+  .compareTable .tline .button {
     padding: 3px 5px;
     font-size: 11px; }
-  #model .compareTable .tcell {
+  .compareTable .tcell {
     font-size: 12px;
     padding: 10px 5px; }
-  #model .compareTable .counterValue__input {
+  .compareTable .counterValue__input {
     max-width: 30px;
     padding: 3px; }
   .compareTable_specifications .td_large .tcell, .compareTable_specifications .th_large .tcell {
     padding: 10px; }
-  #model .td_button {
+  .td_button {
     border: 1px solid #FBDA1B;
     width: 175px;
     padding: 5px 0;
     font-size: 12px; }
-  #model .td-button {
+  .td-button {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; } }
+
+.compareTable_finance .tline {
+  border: 0; }
+
+.compareTable_finance .tline > .td .tcell {
+  font-weight: normal; }
 
 /*!nouislider - 10.0.0 - 2017-05-28 14:52:48*/
 .noUi-target, .noUi-target * {
@@ -3424,17 +3430,24 @@ svg {
             flex-wrap: wrap; }
   .financeCalculator__inner,
   .financeCalculator__wrapTable {
-    width: 100%; }
+    width: 100%;
+    padding-top: 0; }
+  .financeCalculator__wrapTable--right {
+    padding-right: 10px;
+    padding-left: 10px; }
   .financeCalculator__inner {
     margin-bottom: 32px; }
-  .financeCalculator__wrapTable--right {
-    padding-bottom: 60px; }
   .financeCalculator__selection_checkboxes .td_large {
     width: 100%; }
   .financeCalculator__wrapTable--left .financeCalculator__table {
-    padding-bottom: 30px; }
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px; }
   .financeCalculator__form {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px; }
   .financeCalculator__selection_checkboxes .td_large {
     width: auto; }
   .financeCalculator__wrapTable--left .tline .td_large {
@@ -3450,8 +3463,8 @@ svg {
   .financeCalculator__wrapTable--right,
   .financeCalculator__wrapTable--left .financeCalculator__table,
   .financeCalculator__form {
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 10px;
+    padding-right: 10px; }
   .leasingFormData__input,
   .leasingFormData__name {
     font-size: 14px; }
