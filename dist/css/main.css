@@ -1475,7 +1475,7 @@ svg {
 
 .customCheckbox > input:checked ~ .customcheck::after {
   content: '';
-  background-image: url(../../assets/images/done.svg);
+  background-image: url(../assets/images/done.svg);
   background-size: 6px;
   background-repeat: no-repeat;
   background-position: center center;
