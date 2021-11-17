@@ -676,7 +676,8 @@ function getFinanceConditions($wrapTable){
 		});
 	}
 
-	$('.js-popup-show', $conditionTable).data('autoload-detail',financeConditions);
+	$('.js-leasing-btn', $conditionTable).attr('data-autoload-detail',financeConditions);
+
 }
 
 // calculation finance
