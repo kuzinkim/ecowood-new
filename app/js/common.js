@@ -466,12 +466,24 @@ $(document).ready(function(){
         $('.footer__catalog-dropdown').stop().slideToggle()
     })
 
-    $('.catalog__btn').on('click', function(e){
-        e.preventDefault();
-        $(this).toggleClass('active')
-        $('.catalog__dropdown').toggleClass('active')
-    })
+    if (window.matchMedia('(min-width: 1280px)').matches) {
+        $('.catalog-wrap').on('mouseenter', function(e){
+            $(this).find('.catalog__btn').addClass('active')
+            $('.catalog__dropdown').addClass('active')
+        })
 
+        $('.catalog-wrap').on('mouseleave', function(e){
+            $(this).find('.catalog__btn').removeClass('active')
+            $('.catalog__dropdown').removeClass('active')
+        })
+    } else {
+        $('.catalog__btn').on('click', function(e){
+            e.preventDefault();
+            $(this).toggleClass('active')
+            $('.catalog__dropdown').toggleClass('active')
+        })
+    }
+    
     var catalogItem = document.querySelectorAll('.js-catalog-item');
     var catalogContainer = document.querySelector('.js-catalog-container');
 

@@ -4146,10 +4146,25 @@ ul, li {
     margin-right: 0;
     margin-bottom: 30px; } }
 
+.catalog-wrap > a {
+  position: relative;
+  padding-right: 20px; }
+  .catalog-wrap > a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    height: 34px; }
+
 .catalog__btn {
   position: relative;
   font-weight: 700;
-  font-size: 20px; }
+  font-size: 20px;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s; }
   .catalog__btn.active {
     color: #107C03; }
   @media screen and (max-width: 1280px) {
@@ -4167,7 +4182,7 @@ ul, li {
     background-size: contain;
     background-position: center center;
     position: absolute;
-    right: -20px;
+    right: 0;
     top: 58%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -4193,11 +4208,15 @@ ul, li {
   -webkit-box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 10px 10px;
-  padding-top: 58px;
-  padding-left: 68px;
-  padding-bottom: 40px;
+  padding-top: 28px;
+  padding-left: 38px;
+  padding-bottom: 20px;
   padding-right: 50px;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
   z-index: 1; }
   @media (max-width: 767px) {
     .catalog__dropdown {
@@ -4206,14 +4225,12 @@ ul, li {
       -webkit-box-shadow: none;
               box-shadow: none; } }
   .catalog__dropdown.active {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    z-index: 12; }
+    opacity: 1;
+    visibility: visible; }
 
 .catalog__item {
-  width: calc(50% - 20px); }
+  width: calc(50% - 20px);
+  margin-bottom: 20px; }
   @media (max-width: 767px) {
     .catalog__item {
       width: 100%; } }
@@ -4258,17 +4275,21 @@ ul, li {
             align-items: center; }
 
 .catalog__name {
-  font-weight: 700;
-  font-size: 23px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 30px;
   display: inline-block;
-  margin-left: 30px; }
+  margin-left: 30px;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+  color: #26130d; }
+  .catalog__name:hover {
+    color: #107C03; }
   @media (max-width: 767px) {
     .catalog__name {
       margin-left: 0;
-      font-size: 20px; }
-      .catalog__name br {
-        display: none; } }
+      font-size: 16px; } }
 
 .catalog__list {
   list-style: none;
