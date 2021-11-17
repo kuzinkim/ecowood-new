@@ -436,7 +436,8 @@
     }
     &-wrap{
 
-        & > a{
+        & > .catalog__btn{
+            cursor: pointer;
             position: relative;
             padding-right: 20px;
             &::before{
