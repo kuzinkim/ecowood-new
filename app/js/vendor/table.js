@@ -328,7 +328,7 @@
 	CompareTable.prototype.addFolding = function() {
 		let allLines = this.table.find('.thead, .tline').length;
 		let pagination = this.table.find('.tpaging');
-		let htmlControlFolding = '<div class="tpaging tpaging_fold"><button class="tpaging__fold folded" data-value="more"><span>����������</span><span>��������</span><svg width="20" height="20"><use xlink:href="/upload/images/sprite.svg#arrow"></use></svg></button></div>';
+		let htmlControlFolding = '<div class="tpaging tpaging_fold"><button class="tpaging__fold folded" data-value="more"><span>Развернуть</span><span>Свернуть</span></button></div>';
 
 		if (allLines <= this.lines) {
 			pagination.remove();

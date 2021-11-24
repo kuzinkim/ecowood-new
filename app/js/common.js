@@ -435,7 +435,7 @@ function initCompareTable(items, spcifications) {
             {
                 breakpoint: 1280,
                 settings: {
-                    columns: 7,
+                    columns: 5,
                 }
             },
         ];

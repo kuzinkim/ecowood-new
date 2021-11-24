@@ -213,7 +213,7 @@ textarea{
 .compareTable .tpaging .hide,.compareTable .tpaging_fold::before{display:none}
 .compareTable .tpaging__more{margin:0 30px}
 .compareTable .tpaging__more:focus{outline:0}
-.compareTable .tpaging__fold{margin:0 auto;border:none;background:0 0;font-size:14px;line-height:1.5;color:#969696;transition:color .2s ease-in-out;cursor:pointer}
+.compareTable .tpaging__fold{margin:0 auto;border: 1px solid #FF6600;border-radius: 10px;color: #FF6600;font-weight: 700;width: 270px;text-align: center;padding: 11px 0;cursor: pointer;background-color: transparent;}
 .compareTable .tpaging__fold:focus{outline:0}
 .compareTable .tpaging__fold span{vertical-align:middle}
 .compareTable .tpaging__fold svg{color:#005aa6;vertical-align:middle;-webkit-transform:rotate(-90deg) scale(-1,1);-ms-transform:rotate(-90deg) scale(-1,1);transform:rotate(-90deg) scale(-1,1)}
@@ -230,22 +230,16 @@ textarea{
 .thead > .th .tcell{text-align: left;}
 .compareTable .tbtn_prev svg{transform: translate(-50%, -50%) rotate(180deg);}
 .compareTable .tbtn_next svg{transform: translate(-50%, -50%) rotate(0deg);}
-.td_button{    
-    border: 1px solid #FF6600;
-    border-radius: 10px;
-    color: #FF6600;
-    font-weight: 700;
-    width: 270px;
-    text-align: center;
-    padding: 11px 0;
-    cursor: pointer;
-}
+.td_button{    border: 1px solid #FF6600;border-radius: 10px;color: #FF6600;font-weight: 700;width: 270px;text-align: center;padding: 11px 0;cursor: pointer;}
 
 .thead .th{flex: 1.5 0 0}
 .tline .td_name{flex: 1.5 0 0}
 .compareTable .td-button{flex: 3 0 0; display: flex; justify-content: flex-end;}
+.compareTable_specifications .tline--custom .td{width: 100% !important;}
+.compareTable_specifications .tline--custom .tr{width: 100% !important;left: 0% !important;}
 @media screen and (min-width:992px){
 .compareTable .td_large,.compareTable .th_large{flex:3 0 0}
+.compareTable_specifications .td_large,.compareTable .th_large{flex:5 0 0}
 }
 @media screen and (max-width:1279px){
 .compareTable .button_order{font-size:12px;padding:5px 10px}
@@ -257,6 +251,8 @@ textarea{
 .compareTable.compareTable_finance .th_empty:last-child,
 .compareTable.compareTable_finance .td_empty:first-child,
 .compareTable.compareTable_finance .td_empty:last-child{display:none}
+.compareTable_specifications .thead .th{flex: 2 0 0}
+.compareTable_specifications .tline .td_name{flex: 2 0 0}
 }
 @media screen and (max-width:767px){
 .compareTable .tpaging{display:block}
